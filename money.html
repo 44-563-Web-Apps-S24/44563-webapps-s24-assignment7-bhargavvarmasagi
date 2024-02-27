@@ -182,6 +182,8 @@
         }
 
         function help(){
+            if(gameOver)
+            return;
             let rowOne = Math.floor(lastLocation / 5);
             let colOne = lastLocation % 5;
 

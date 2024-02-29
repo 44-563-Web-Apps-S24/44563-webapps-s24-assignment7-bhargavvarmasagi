@@ -58,7 +58,7 @@
             <p>Click on the locations to find coins, beware the monster</p>
             <p id="locations">Number of locations checked is zero</p>
             <p id="score">Score is zero</p>
-            <p>Click for help</p>
+            <p onclick="help()">Click for help</p>
             <p id="help">Help report</p>
         </div>
         <div class="container">
@@ -213,7 +213,6 @@
     
                 }
                 
-    
                 var monsterRow = Math.floor(monsterLocation / 5);
                 var monsterCol = monsterLocation % 5;
                 if (rowOne - monsterRow< 1 && colOne - monsterCol < 1) {
@@ -236,9 +235,6 @@
             document.getElementById("locations").innerText =`locations: 0`; 
             document.getElementById("score").innerText = `score: 0`;
         }
-
-
-
       </script>
 </body>
 

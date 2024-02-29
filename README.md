@@ -2,8 +2,8 @@
 # WebApps-S24-Assignment-7
 An assignment on java script modifying the DOM and using anonymous callback functions.
 
-Hosted at [Money HTML](https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment7-bhargavvarmasagi.git/money.html)
+Hosted at [Money](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-bhargavvarmasagi/money.html)
 
-Hosted at [Precision HTML](https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment7-bhargavvarmasagi.git/precision.html)
+Hosted at [Precision](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-bhargavvarmasagi/precision.html)
 
-Hosted at [Divlist HTML](https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment7-bhargavvarmasagi.git/divlist.html)
+Hosted at [Divlist](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-bhargavvarmasagi/divlist.html)

@@ -198,13 +198,13 @@
             function help()
             {
                 
-                var col= lastLocation%5;
-                var row= Math.floor(lastLocation/5);
+                let colOne= lastLocation%5;
+                let rowOne= Math.floor(lastLocation/5);
                 
-                const kinshipLocations = [lastLocation-1,lastLocation+1,lastLocation-5,lastLocation+5];
-                for(const kinship of kinshipLocations)
+                let kinshipLocations = [lastLocation-1,lastLocation+1,lastLocation-5,lastLocation+5];
+                for(let kinship of kinshipLocations)
                 {
-                    const adjustedLoc = (kinship+35)%35;
+                    let adjustedLoc = (kinship+35)%35;
                     if(fancyCoinLocations.includes(adjustedLoc))
                 {
                     document.getElementById("help").innerHTML="So close";
@@ -216,7 +216,7 @@
     
                 var monsterRow = Math.floor(monsterLocation / 5);
                 var monsterCol = monsterLocation % 5;
-                if (row - monsterRow< 1 && col - monsterCol < 1) {
+                if (rowOne - monsterRow< 1 && colOne - monsterCol < 1) {
                   document.getElementById("help").innerHTML="Grr";
                 }
                 else
@@ -225,6 +225,7 @@
                 }
                 document.getElementById("help").onclick = help;
             }
+
             function newGame() {
             monsterLocation = Math.floor(Math.random() * 35);
             fancyCoinLocations = Math.floor(Math.random() * 35);

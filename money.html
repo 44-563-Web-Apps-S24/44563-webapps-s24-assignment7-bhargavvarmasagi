@@ -174,7 +174,6 @@
                 locations++;
                 document.getElementById("locations").innerText = `locations:`+locations;
                 document.getElementById("score").innerText = score;
-    
             }
             else if (position==monsterLocation) {
                 img.src = "monsterOne.jpeg";
@@ -186,7 +185,7 @@
                 }
             
             else{
-                img.src="coin.jpeg";
+                img.src="coin.jpg";
                 score+=1;
                 locations++;
                 document.getElementById("locations").innerText =`locations:`+ locations; 
@@ -226,16 +225,18 @@
                 }
                 document.getElementById("help").onclick = help;
             }
-        //     function newGame() {
-        //     monsterLocation = Math.floor(Math.random() * 35);
-        //     fancyCoinLocations = Math.floor(Math.random() * 35);
-        //     console.log(monsterLocation);
-        //     console.log(fancyCoinLocations);
-        //     score=null;
-        //     locations=null;
-        //     document.getElementById("locations").innerText =`locations: 0`; 
-        //     document.getElementById("score").innerText = `score: 0`;
-        // }
+            function newGame() {
+            monsterLocation = Math.floor(Math.random() * 35);
+            fancyCoinLocations = Math.floor(Math.random() * 35);
+            console.log(monsterLocation);
+            console.log(fancyCoinLocations);
+            score=null;
+            locations=null;
+            document.getElementById("locations").innerText =`locations: 0`; 
+            document.getElementById("score").innerText = `score: 0`;
+        }
+
+
 
       </script>
 </body>

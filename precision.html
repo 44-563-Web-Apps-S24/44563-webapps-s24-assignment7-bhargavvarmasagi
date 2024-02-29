@@ -34,6 +34,7 @@
     <button type="button" class="btn btn-success" id="btn1" onclick="startTime()">Start Timer</button>
     <button type="button" class="btn btn-success" id="btn2" onclick="recordTime()">Stop Timer</button>
 
+
     <script>
         let stopTime = undefined;
 
@@ -43,8 +44,10 @@
         }
 
         document.getElementById('btn2').onclick = recordTime;
+
         function startTime() {
-            for (let i = 0; i < 5; i++) {
+            random=Math.floor(Math.random()*9)+2;
+            for (let i = 0; i < random; i++) {
                 setTimeout(function () {
                     document.getElementById('counter').innerHTML = i;
                 }, (4 - i) * 1000);

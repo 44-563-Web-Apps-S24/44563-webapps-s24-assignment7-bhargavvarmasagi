@@ -60,6 +60,7 @@
             <p id="score">Score is zero</p>
             <p onclick="help()">Click for help</p>
             <p id="help">Help report</p>
+            <p><button class="btn btn-success" onclick="newGame()">New game</button></p>
         </div>
         <div class="container">
             <div class="row">
@@ -232,9 +233,10 @@
             console.log(fancyCoinLocations);
             score=null;
             locations=null;
-            document.getElementById("locations").innerText =`locations: 0`; 
+            document.getElementById("locations").innerText =`locations: 0`;
             document.getElementById("score").innerText = `score: 0`;
         }
+
       </script>
 </body>
 

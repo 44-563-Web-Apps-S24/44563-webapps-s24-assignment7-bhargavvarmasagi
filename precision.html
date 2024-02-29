@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Precision HTML</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <h1>Venkata Srinivasa Bhargav Varma Sagi speed check</h1>
-  <div id="target">Your time</div>
-  <div id="counter">Count</div>
-  <button type="button" id="btn1" onclick="startTime()">Start Timer</button>
-  <button type="button" id="btn2" onclick="recordTime()">Stop Timer</button>
-  
-  <!-- <p id="countdown">Countdown </p> -->
-  
 
- <script>
+<head>
+    <title>Precision HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        h1 {
+            background-color: gray;
+            color: white;
+            margin: 13px;
+            padding: 12px;
+        }
+
+        div {
+            margin: 13px;
+        }
+
+        button {
+            margin: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Venkata Srinivasa Bhargav Varma Sagi speed check</h1>
+    <div id="target">Your time</div>
+    <div id="counter">Count</div>
+    <button type="button" class="btn btn-success" id="btn1" onclick="startTime()">Start Timer</button>
+    <button type="button" class="btn btn-success" id="btn2" onclick="recordTime()">Stop Timer</button>
+
+    <script>
         let stopTime = undefined;
 
         function recordTime() {
@@ -30,11 +45,11 @@
         document.getElementById('btn2').onclick = recordTime;
         function startTime() {
             for (let i = 0; i < 5; i++) {
-                setTimeout(function() {
+                setTimeout(function () {
                     document.getElementById('counter').innerHTML = i;
                 }, (4 - i) * 1000);
             }
-            setTimeout(function() {
+            setTimeout(function () {
                 if (stopTime === undefined) {
                     document.getElementById('target').innerHTML = "Too Slow";
                 } else {
@@ -48,4 +63,5 @@
     </script>
 
 </body>
+
 </html>

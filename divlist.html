@@ -42,21 +42,13 @@
 
 <script>
 	function makeNewDiv(){
-		
 		let element = document.createElement("div")
         let valOne = document.getElementsByClassName("divlist").value;
 		let valTwo= document.getElementById("textOne").value;
 		console.log(valTwo);
-		
 		element.innerHTML = valTwo;
-		element.style.color = "red"
-
-		
 		let container = document.getElementById('target')
-
 		container.appendChild(element)
-		
-
 	}
 
     function remove()
